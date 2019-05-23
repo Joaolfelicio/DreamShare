@@ -1,0 +1,384 @@
+*
+    box-sizing: border-box
+    transition: 0.3s
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none
+
+*:not(input)
+    margin: 0
+    padding: 0
+    border: 0
+
+//                 MOBILE VERSION
+
+
+
+//                  BODY
+
+body
+    width: 100%
+    margin: 0 auto
+
+//                  HEADER
+
+header 
+    height: 540px
+    background-image: url("../images/header.png")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-position: center
+    background-size: cover
+    color: white
+    padding-top: 20px
+    padding-bottom: 50px
+    
+    #header-top
+        height: 174.16px
+        padding-top: 19px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+
+        #login
+            width: 55%
+            display: flex
+            justify-content: space-between
+            font-weight: normal
+            text-align: center
+            
+            a    
+                justify-content: center
+                align-items: center
+                display: flex
+                font-size: 14px
+                color: white
+                margin-left: 10px
+                margin-right: 10px
+                
+                &:nth-child(2)
+                    justify-content: center
+                    align-items: center
+                    display: flex
+                    height: 36px
+                    width: 89.91px
+                    border: 2px solid white
+                    border-radius: 30px
+
+        h2
+            font-size: 20px
+            font-weight: normal
+            text-transform: uppercase
+            text-align: center
+
+    #header-main
+        margin: 40px auto
+        text-align: center
+        width: 280px
+
+        h1
+            font-size: 30px
+            font-weight: normal
+            text-transform: uppercase
+
+        h3
+            width: 80%
+            margin: 0 auto
+            margin-top: 35px
+            font-size: 18px
+            font-weight: normal
+    
+        a
+            color: white
+            font-size: 14px
+            margin-top: 15px
+            display: inline-block
+            width: 90%
+            padding: 10px
+            border-radius: 30px
+            background-color: #FF4E50
+
+//                          MAIN                        
+
+main
+    min-width: 301px
+    margin: 0 auto
+    margin-top: 40px
+
+    h2
+        text-align: center
+        font-size: 22px
+        font-weight: normal
+
+    article
+        width: 50%
+        min-width: 299px
+        height: 241.35px
+        background-color: white
+        margin: 25px auto
+        display: flex
+        justify-content: flex-end
+        flex-direction: column
+        border-radius: 5px
+
+        .article-content
+            width: 260.28px
+            margin: 0 auto
+            color: white
+
+            .badge
+                font-size: 10px
+                width: 60px
+                text-align: center
+                padding: 3px 5px 3px 5px
+                color: white
+                border-radius: 10px
+                letter-spacing: 1px
+                background-color: #FF4E50
+
+            h4
+                margin-top: 15px
+                font-size: 24px
+                font-weight: normal
+
+            p
+                color: #CCCCCC
+                margin-top: 15px
+                font-size: 14px
+                margin-bottom: 15px
+
+    //                              SEARCH ARTICLE
+    #search
+        margin-top: 40px
+        width: 40%
+        margin: 0 auto
+        margin-bottom: 40px
+        padding-bottom: 20px
+        text-align: center
+        display: flex
+        justify-content: space-around
+
+        #searchbar
+            display: flex
+            width: 100%
+            margin: 0 auto
+            flex-direction: column
+            justify-content: space-between
+            align-content: space-between
+
+
+        h3
+            width: 90%
+            margin: 0 auto
+            font-size: 21.94px
+            font-weight: normal
+        
+        h4
+            font-size: 17.95px
+            font-weight: normal
+
+        input
+            padding: 10px
+            width: 100%
+            border-radius: 3px
+            border: 1px solid #CCCCCC
+
+        a
+            color: white
+            margin-top: 10px
+            display: inline-block
+            width: 100%
+            padding: 10px
+            border-radius: 20px
+            background-color: #FF4E50
+
+    #step1
+        background-image: url("../images/step1desk.png")
+        background-size: cover
+        background-position: center
+
+    #step2
+        background-image: url("../images/step2desk.png")
+        background-size: cover
+        background-position: center
+
+    #step3
+        background-image: url("../images/step3desk.png")
+        background-size: cover
+        background-position: center
+footer
+    width: 100%
+    background-color: #FCFCFC
+    border-top: 5px solid #FF4E50
+
+#footer-container
+    height: 200px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    padding-top: 10px
+    padding-bottom: 10px
+    margin-bottom: 10px
+
+    h3
+        margin-top: 10px
+        font-size: 16px
+        color: red
+        font-weight: normal
+        letter-spacing: 1px
+
+    p
+        margin-top: 10px
+        font-size: 14px
+
+    img
+        margin-top: 10px
+        
+#links-box
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    #links
+        width: 202px
+        display: flex
+        justify-content: space-between
+        margin-top: 10px
+        text-align: center
+
+        a
+            color: black
+            text-align: center
+            margin: 0 auto
+            font-size: 14px
+
+
+//                                  MEDIA QUERY FOR TABLET
+
+@media screen and (min-width: 785px)
+
+    body
+        width: 100%
+
+    header
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
+        padding-top: 0px
+
+        
+        #header-top
+            width: 90%
+            margin: 0 auto
+            flex-direction: row-reverse
+            justify-content: space-between
+            align-items: flex-start
+
+            #login
+                width: 25%
+                display: flex
+                justify-content: space-between
+
+        #header-main
+            width: 60%
+            margin-top: 0px
+
+            a
+                width: 60%
+
+        #header-main h1
+            font-size: 52px
+
+        #header-main h3
+            margin-top: 10px
+            font-size: 24px
+
+        #header-main a
+            margin-top: 30px
+    main
+        margin: 0 auto
+        max-width: 1000px
+
+        h2
+            padding-top: 80px
+            padding-bottom: 20px
+
+
+    #main-articles
+        width: 100%
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-items: space-between
+
+        .article-content
+            width: 85%
+            margin: 0 auto
+
+        article
+            height: 400px
+            min-width: initial
+            width: 30%
+
+    main #search
+        width: 60%
+        padding-top: 100px
+        padding-bottom: 30px
+
+        h3
+            margin-bottom: 30px
+        
+        h4
+            margin-bottom: 30px
+
+    main #search #searchbar
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-top: 10px
+       
+        input
+            width: 60%
+
+        a
+            width: 40%
+            margin: 0
+            margin-left: 10px
+
+    //                  FOOTER
+    
+    footer
+        margin-top: 100px
+
+    #footer-container
+        flex-direction: row
+        align-items: flex-start
+
+    #links-box #links
+        height: 100px
+        flex-direction: column
+        justify-content: space-between
+
+@media screen and (min-width: 940px)
+    header
+        width: 100%
+        height: 100vh
+        border-bottom-left-radius: 0px
+        border-bottom-right-radius: 0px
+
+    main
+        width: 95%
+
+    header #header-top
+        width: 70%
+
+        #login
+            width: 26%
+
+    header #header-main
+            margin-top: 15vh
+
+    #footer-container
+        width: 80%
+        margin: 0 auto
